@@ -20,14 +20,14 @@ public class Family extends AppCompatActivity {
 
 
         ArrayList<Word> words = new ArrayList<>();
-        words.add(new Word("father", "bàbá"));
-        words.add(new Word("mother", "ìyá"));
-        words.add(new Word("son", "o̩mo̩kùnrin"));
-        words.add(new Word("daughter", "o̩mo̩ obìnrin"));
-        words.add(new Word("older brother", "é̩gbo̩n o̩kùnrin"));
-        words.add(new Word("younger brother", "àbúrò o̩kùnrin"));
-        words.add(new Word("older sister", "é̩gbo̩n obìnrin"));
-        words.add(new Word("younger sister", "àbúrò obìnrin"));
+        words.add(new Word("father", "bàbá", R.drawable.family_father));
+        words.add(new Word("mother", "ìyá", R.drawable.family_mother));
+        words.add(new Word("son", "o̩mo̩kùnrin", R.drawable.family_son));
+        words.add(new Word("daughter", "o̩mo̩ obìnrin", R.drawable.family_daughter));
+        words.add(new Word("older brother", "é̩gbo̩n o̩kùnrin", R.drawable.family_older_brother));
+        words.add(new Word("younger brother", "àbúrò o̩kùnrin", R.drawable.family_younger_brother));
+        words.add(new Word("older sister", "é̩gbo̩n obìnrin", R.drawable.family_older_sister));
+        words.add(new Word("younger sister", "àbúrò obìnrin", R.drawable.family_younger_sister));
         words.add(new Word("boy", "o̩kùnrin"));
         words.add(new Word("female", "obìnrin"));
 

@@ -9,10 +9,20 @@ public class Word {
 
     private String mYorubaTranslation;
 
+    private int mImageId = NO_IMAGE;
+
+    private static final int NO_IMAGE = -1;
+
     public Word(String englishWord, String yorubaTranslation){
         mEnglishWord = englishWord;
         mYorubaTranslation = yorubaTranslation;
 
+    }
+
+    public Word(String englishWord, String yorubaTranslation, int imageId){
+        mEnglishWord = englishWord;
+        mYorubaTranslation = yorubaTranslation;
+        mImageId = imageId;
     }
 
     public String getEnglishWord(){
@@ -22,4 +32,13 @@ public class Word {
     public String getYorubaTranslation(){
         return mYorubaTranslation;
     }
+
+    public int getImageId(){
+        return mImageId;
+    }
+
+    public boolean yesImage(){
+        return mImageId != NO_IMAGE;
+    }
 }
+

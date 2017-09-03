@@ -18,13 +18,13 @@ public class Colors extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<>();
-        words.add(new Word("red", "pupa"));
-        words.add(new Word("green", "àwo ewé"));
-        words.add(new Word("brown", "àwo pako"));
-        words.add(new Word("grey", "àwo eléerú"));
-        words.add(new Word("black", "dúdú"));
-        words.add(new Word("white", "funfun"));
-        words.add(new Word("yellow", "iyèyè"));
+        words.add(new Word("red", "pupa", R.drawable.color_red));
+        words.add(new Word("green", "àwo ewé", R.drawable.color_green));
+        words.add(new Word("brown", "àwo pako", R.drawable.color_brown));
+        words.add(new Word("grey", "àwo eléerú", R.drawable.color_gray));
+        words.add(new Word("black", "dúdú", R.drawable.color_black));
+        words.add(new Word("white", "funfun", R.drawable.color_white));
+        words.add(new Word("yellow", "iyèyè", R.drawable.color_mustard_yellow));
 
 
 

@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="8dp"
+    >
 
+    <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
 
+        />
 
+<RelativeLayout
+    android:id="@+id/text_views"
+    android:layout_width="match_parent"
+    android:layout_height="88dp">
     <TextView
-        android:id="@+id/yoruba_text_view"
+        android:id="@+id/yoruba_id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
         tools:text="yoruba"/>
 
     <TextView
-        android:id="@+id/english_text_view"
+        android:id="@+id/english_id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@+id/yoruba_id"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textAppearance="?android:textAppearanceMedium"
         tools:text="english"
+        android:textStyle="bold"
         />
+</RelativeLayout>
+
 </LinearLayout>

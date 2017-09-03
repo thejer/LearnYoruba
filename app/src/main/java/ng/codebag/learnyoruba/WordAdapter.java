@@ -1,10 +1,13 @@
 package ng.codebag.learnyoruba;
 
 import android.app.Activity;
+import android.text.style.IconMarginSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -36,14 +39,26 @@ public class WordAdapter extends ArrayAdapter<Word> {
         Word currentWord = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
-        TextView yorubaTextView = (TextView) listItemView.findViewById(R.id.yoruba_text_view);
+        TextView yorubaTextView = (TextView) listItemView.findViewById(R.id.yoruba_id);
         // set this text on the name TextView
         yorubaTextView.setText(currentWord.getYorubaTranslation());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView englishTextView = (TextView) listItemView.findViewById(R.id.english_text_view);
+        TextView englishTextView = (TextView) listItemView.findViewById(R.id.english_id);
         // set this text on the number TextView
         englishTextView.setText(currentWord.getEnglishWord());
+
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image_id);
+
+        if (currentWord.yesImage()){
+            imageView.setImageResource(currentWord.getImageId());
+            imageView.setVisibility(View.VISIBLE);
+        }
+        else {
+            imageView.setVisibility(View.GONE);
+        }
+
+
 
 
         // Return the whole list item layout (containing 2 TextViews)
