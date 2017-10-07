@@ -18,6 +18,7 @@ public class Phrases extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
 
+
         ArrayList<Word> words = new ArrayList<>();
         words.add(new Word("What is your name?", "Kí ni orúkọ rẹ?"));
         words.add(new Word("My name is...", "orúkọ mi ni..."));

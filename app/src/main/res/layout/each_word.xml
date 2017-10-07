@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
+    android:background="@color/tan_background"
+
     >
 
     <ImageView
@@ -18,7 +20,8 @@
 <RelativeLayout
     android:id="@+id/text_views"
     android:layout_width="match_parent"
-    android:layout_height="88dp">
+    android:layout_height="88dp"
+    >
     <TextView
         android:id="@+id/yoruba_id"
         android:layout_width="match_parent"
@@ -40,6 +43,10 @@
         tools:text="english"
         android:textStyle="bold"
         />
+
+
+
 </RelativeLayout>
+
 
 </LinearLayout>

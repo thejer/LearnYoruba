@@ -32,8 +32,6 @@ public class Family extends AppCompatActivity {
         words.add(new Word("female", "obìnrin"));
 
 
-//        ArrayList<String>
-
         WordAdapter adapter = new WordAdapter(this, words);
 
         ListView listView = (ListView) findViewById(R.id.the_list);
