@@ -1,22 +1,32 @@
 package ng.codebag.learnyoruba;
 
+
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Jer on 9/2/2017.
- */
 
-public class Numbers extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class NumbersFragment extends Fragment {
+
+
+    public NumbersFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.word_list);
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         ArrayList<Word> words = new ArrayList<>();
         words.add(new Word("one", "oókan", R.drawable.number_one));
@@ -39,16 +49,12 @@ public class Numbers extends AppCompatActivity {
         words.add(new Word("ninety", "àádọ́rùn-ún"));
         words.add(new Word("one hundred", "ọgọ́rùn-ún"));
 
+        WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_numbers);
 
-
-        WordAdapter adapter = new WordAdapter(this, words);
-
-        ListView listView = (ListView) findViewById(R.id.the_list);
+        ListView listView = (ListView) rootView.findViewById(R.id.the_list);
 
         listView.setAdapter(adapter);
 
-
-
-    }
+        return rootView;    }
 
 }

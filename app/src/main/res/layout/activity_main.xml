@@ -4,59 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/tan_background"
+    android:background="@color/primary_color"
     android:orientation="vertical"
     tools:context="ng.codebag.learnyoruba.MainActivity">
 
-    <TextView
-        android:id="@+id/numbers"
-        style="@style/CategoryStyle"
-        android:background="@color/tan_background"
-        android:text="Numbers"
-        />
-    <View
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        style="@style/CategoryTab"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/primary_dark_color">
+        android:layout_height="wrap_content">
 
-    </View>
+    </android.support.design.widget.TabLayout>
 
-    <TextView
-        android:id="@+id/family"
-        style="@style/CategoryStyle"
-        android:background="@color/tan_background"
-        android:text="Family"
-        />
-    <View
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/primary_dark_color">
-
-    </View>
-
-    <TextView
-        android:id="@+id/colors"
-        style="@style/CategoryStyle"
-        android:background="@color/tan_background"
-        android:text="Colors"
-        />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/primary_dark_color">
-
-    </View>
-
-    <TextView
-        android:id="@+id/phrases"
-        style="@style/CategoryStyle"
-        android:background="@color/tan_background"
-        android:text="Phrases" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/primary_dark_color">
-
-    </View>
-
+        android:layout_height="match_parent"/>
 </LinearLayout>
