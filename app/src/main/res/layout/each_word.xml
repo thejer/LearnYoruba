@@ -26,10 +26,9 @@
             android:id="@+id/yoruba_id"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
+            android:textColor="#2F1D1A"
             android:textStyle="bold"
             tools:text="yoruba" />
 
@@ -38,10 +37,9 @@
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_below="@+id/yoruba_id"
-            android:layout_weight="1"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
+            android:textColor="#2F1D1A"
             android:textStyle="bold"
             tools:text="english" />
     </RelativeLayout>

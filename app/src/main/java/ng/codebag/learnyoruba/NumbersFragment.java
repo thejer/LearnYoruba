@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -49,7 +48,7 @@ public class NumbersFragment extends Fragment {
         words.add(new Word("ninety", "àádọ́rùn-ún"));
         words.add(new Word("one hundred", "ọgọ́rùn-ún"));
 
-        WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_numbers);
+        WordAdapter adapter = new WordAdapter(getActivity(), words);
 
         ListView listView = (ListView) rootView.findViewById(R.id.the_list);
 
