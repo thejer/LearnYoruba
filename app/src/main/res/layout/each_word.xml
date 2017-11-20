@@ -27,8 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:gravity="bottom"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#2F1D1A"
+            android:textAppearance="?android:textAppearanceMedium"            android:textColor="#2F1D1A"
             android:textStyle="bold"
             tools:text="yoruba" />
 
